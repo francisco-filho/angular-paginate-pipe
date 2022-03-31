@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
   filtro = ""
   pagina = 0
-  qtdPorPagina = 7
+  qtdPorPagina = 5
   totalSolicitacoes = 0; 
   solicitacoes: string[] = []
   solicitacoesCompletas = [
@@ -38,7 +38,6 @@ export class AppComponent implements OnInit {
     if (this.filtro === ""){
       sols = [...this.solicitacoesCompletas]
     } else {
-      console.log('filtro', this.filtro)
       sols = [...this.solicitacoesCompletas.filter(s => {
         return s.toLowerCase().includes(this.filtro)
       })]//
@@ -49,6 +48,5 @@ export class AppComponent implements OnInit {
 
   paginate(event: {page: number}){
       this.pagina = event.page;
-      console.log('nova pagina', this.pagina)
   }
 }
