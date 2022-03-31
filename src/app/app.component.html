@@ -7,9 +7,12 @@
 <ul *ngFor="let s of (solicitacoes | paginate:pagina:totalSolicitacoes:qtdPorPagina)">
   <li>{{ s }}</li>
 </ul>
-<p-paginator [rows]="qtdPorPagina" 
+<p-paginator 
+  #paginador
+  [rows]="qtdPorPagina" 
   [totalRecords]="totalSolicitacoes"
   (onPageChange)="paginate($event)"
 ></p-paginator>
+<p-button (click)="irParaPagina()">Pagina 1</p-button>
 
 

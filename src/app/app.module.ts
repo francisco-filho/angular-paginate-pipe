@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import {PaginatorModule} from 'primeng/paginator';
 import { PaginatePipe } from './paginate.pipe';
 import {OverlayModule} from '@angular/cdk/overlay'; 
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
     FormsModule,
     PaginatorModule,
     OverlayModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

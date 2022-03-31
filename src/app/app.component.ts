@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Paginator } from 'primeng/paginator';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,9 @@ export class AppComponent implements OnInit {
     this.filtrar()
   }
   title = 'angular-teste';
+
+  @ViewChild("paginador")
+  paginator?: Paginator
 
   filtro = ""
   pagina = 0
@@ -48,5 +52,9 @@ export class AppComponent implements OnInit {
 
   paginate(event: {page: number}){
       this.pagina = event.page;
+  }
+
+  irParaPagina(){
+    this.paginator?.changePage(1)
   }
 }
