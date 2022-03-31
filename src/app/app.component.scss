@@ -1,15 +1,16 @@
-p-paginator ::ng-deep{
-    button {
-        font-size: .5rem;
-        min-width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        color: #ffea00 !important;
-    }
-.paginator-button, .pi {
-font-size: .5rem;
-min-width: 1rem;
-height: 1rem;
-border-radius: 50%;
-    }
+p-paginator ::ng-deep {
+  button {
+    font-size: 0.5rem;
+    min-width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    color: #ffea00 !important;
+  }
+  .paginator-button,
+  .pi {
+    font-size: 0.5rem;
+    min-width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
 }

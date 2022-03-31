@@ -4,9 +4,9 @@
   [(ngModel)]="filtro" 
   (input)="filtrar()"/>
 </div>
-<ul *ngFor="let s of (solicitacoes | paginate:pagina:totalSolicitacoes:qtdPorPagina)">
-  <li>{{ s }}</li>
-</ul>
+    <ul *ngFor="let s of (solicitacoes | paginate:pagina:qtdPorPagina)">
+      <li>{{ s }}</li>
+    </ul>
 <p-paginator 
   #paginador
   [rows]="qtdPorPagina" 
