@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {PaginatorModule} from 'primeng/paginator';
+import { PaginatePipe } from './paginate.pipe';
+import {OverlayModule} from '@angular/cdk/overlay'; 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaginatePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FormsModule,
+    PaginatorModule,
+    OverlayModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
