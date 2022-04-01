@@ -12,6 +12,8 @@ import { Pipe, PipeTransform } from '@angular/core';
  * # novidades
  * - testar responsividade
  * - cancelamento
+ * # verificações
+ * - como está o log das ações executadas no sistema
  */
 
 @Pipe({
